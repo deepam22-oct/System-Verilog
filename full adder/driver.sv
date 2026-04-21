@@ -15,7 +15,7 @@ class driver ;
     vif.a <= 4'b0 ;
     vif.b <= 4'b0 ;
     vif.c <= 5'b0 ;
-    wait(vif.rst);
+    wait(!vif.rst);
     $display("------------- DRIVER RESET ENDED ------------");
   endtask
   
