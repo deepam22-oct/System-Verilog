@@ -1,7 +1,7 @@
 module mux4to1 (
     input  clk, rst, valid,
-    input  i0, i1, i2, i3,
-    input  s1, s0,
+    input [3:0] i ,
+    input  [1:0] sel ,
     output reg y
 );
 
