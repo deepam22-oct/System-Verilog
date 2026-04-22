@@ -10,11 +10,11 @@ module mux4to1 (
         y <= 0;
      end
      else if (valid) begin
-        case ({s1, s0})
-            2'b00: y <= i0;
-            2'b01: y <= i1;
-            2'b10: y <= i2;
-            2'b11: y <= i3;
+         case (sel)
+             2'b00: y <= i[0];
+             2'b01: y <= i[1];
+             2'b10: y <= i[2];
+             2'b11: y <= i[3];
             default: y <= 0;
         endcase
      end
