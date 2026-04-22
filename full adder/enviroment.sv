@@ -33,7 +33,7 @@ class enviroment ;
     driv.main();
     mon.main();
     scb.main();
-    join 
+    join_any
   endtask
 
  task post_test();
