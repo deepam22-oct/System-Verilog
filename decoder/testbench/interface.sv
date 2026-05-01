@@ -1,5 +1,5 @@
 
-interface intf(input logic clk,reset);
+interface intf(input logic clk,rst);
   
   //declaring the signals
   logic valid;
