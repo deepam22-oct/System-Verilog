@@ -15,7 +15,7 @@ class monitor;
       trans = new();
       @(posedge vif.clk);
       wait(vif.valid);
-      vif.in   <= trans.in;
+      trans.in   <= vif.in;
       @(posedge vif.clk);
       trans.out   = vif.out;
       @(posedge vif.clk);
